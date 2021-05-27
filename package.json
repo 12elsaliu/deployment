@@ -3,12 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@atlaskit/atlassian-navigation": "^1.0.0",
+    "@atlaskit/button": "^15.1.6",
+    "@atlaskit/css-reset": "^6.0.5",
+    "@atlaskit/dynamic-table": "^14.2.1",
+    "@atlaskit/inline-dialog": "^13.0.10",
+    "@atlaskit/lozenge": "^10.1.2",
+    "@atlaskit/section-message": "^6.0.0",
+    "@atlaskit/textfield": "^5.0.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -34,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "luxon": "^1.27.0"
   }
 }

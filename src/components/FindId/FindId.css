@@ -1,0 +1,21 @@
+.inputContainer { 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.textField{
+  margin:5px;
+  width:200px
+}
+
+.button{
+  margin-top:25px;
+  margin-left: 10px
+}
+

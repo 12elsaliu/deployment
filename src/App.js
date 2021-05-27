@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import DisplayTable from './components/DisplayTable/DisplayTable'
+import FindId from './components/FindId/FindId';
+import Navigation from './components/navigation/Navigation';
+import Start from './components/Start/Start'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    router: 'deployment'
+  }
+
+  handleClick = (router) => {
+    this.setState({
+      router
+    })
+  }
+  render() {
+    return (
+      <>
+        <Navigation handleClick={this.handleClick} />
+        {
+          this.state.router === 'deployment'
+            ? <div>
+              <FindId />
+              <DisplayTable />
+            </div>
+            : <Start />
+        }
+      </>
+    )
+  }
 }
 
 export default App;

@@ -1,0 +1,8 @@
+.tableContainer{
+  margin:30px
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+}
